@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 60s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
+        input {
+            width: 33%;
+            height: 30px;
+            border-radius: 3px;
+        }
+
+
+
+        p {
+            font-size: 1.5rem;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <h1>Hello y'all. Ever wondered what's a palindrome?</h1>
+
+        <p> "Oh who was it I saw, oh who?" is a Palindrome</p>
+        <p>"Madam" is a Palindrome</p>
+        <p> "Star Wars" is not a Palindrome</p>
+        <p>"2,3,4,3,2" is a Palindrome</p>
+        <h2>Down below you can check your own palindrome</h2>
+        <input id='input' type="text" placeholder="Enter Something">
+        <button id="button">Check Palindrome</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
